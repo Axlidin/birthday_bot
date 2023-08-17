@@ -71,7 +71,8 @@ async def send_messages_job():
 
 # Har kuni yarim tunda ishni bajarish uchun rejalashtiruvchini sozlang
 scheduler = AsyncIOScheduler(timezone=timezone)
-scheduler.add_job(send_messages_job, 'cron', hour=15, minute=50, second=0)
+print(scheduler)
+scheduler.add_job(send_messages_job, 'cron', hour=15, minute=53, second=0)
 
 # Start the scheduler / Rejalashtiruvchini ishga tushiring
 scheduler.start()
