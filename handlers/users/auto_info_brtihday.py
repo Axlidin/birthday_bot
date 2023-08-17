@@ -71,7 +71,7 @@ async def send_messages_job():
 
 # Har kuni yarim tunda ishni bajarish uchun rejalashtiruvchini sozlang
 scheduler = AsyncIOScheduler(timezone=timezone)
-scheduler.add_job(send_messages_job, 'cron', hour=14, minute=2, second=0)
+scheduler.add_job(send_messages_job, 'cron', hour=0, minute=0, second=0)
 
 # Start the scheduler / Rejalashtiruvchini ishga tushiring
 scheduler.start()
@@ -129,7 +129,7 @@ async def send_messages_job_gr():
 
 # Har kuni yarim tunda ishni bajarish uchun rejalashtiruvchini sozlang
 scheduler = AsyncIOScheduler(timezone=timezone)
-scheduler.add_job(send_messages_job_gr, 'cron', hour=14, minute=2, second=0)
+scheduler.add_job(send_messages_job_gr, 'cron', hour=0, minute=0, second=0)
 
 # Start the scheduler / Rejalashtiruvchini ishga tushiring
 scheduler.start()
