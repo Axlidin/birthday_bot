@@ -6,4 +6,4 @@ from . import infoBirthday
 from . import sozlamalar
 from . import support
 from . import start
-# from . import echo
+from . import fr_auot_info
